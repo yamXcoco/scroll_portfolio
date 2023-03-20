@@ -833,42 +833,33 @@
       <div class="content content6" id="contact">
         <div class="call_text">
           <h1>LET’S CONNECT</h1>
-          <h2>연락</h2>
           <p>
             와주셔서 감사합니다. <br />
             작업을 재미있게 보셨거나 더 궁금하신 이야기가 있으시면 <br />
             아래의 연락처로 편하게 연락주시면 감사하겠습니다. <br />
           </p>
+          <h2>
+            contact <br />
+            010 4170 1335
+          </h2>
         </div>
         <div class="call_form">
-          <form id="contact-form" class="gform">
+          <form id="contact-form">
             <input type="hidden" name="contact_number" />
-            <input type="hidden" name="subject" value="안녕하세요!!!!" />
-
-            <label>소속</label>
-            <input
-              type="text"
-              id="username"
-              name="username"
-              placeholder="소속 또는 성명"
-            />
-
+            <input type="hidden" name="subject" value="안녕하세요!!!" />
+            <label>이름</label>
+            <input type="text" id="userName" placeholder="이름" name="name" />
             <label>이메일</label>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="abd@domain.com"
-            />
-            <label>메시지 적기</label>
+            <input type="email" id="email" placeholder="이메일" name="email" />
+            <label>내용</label>
             <textarea
               id="message"
-              name="message"
               cols="30"
-              rows="6"
+              rows="10"
               placeholder="내용"
+              name="message"
             ></textarea>
-            <button class="btn" type="submit">메일 보내기</button>
+            <button class="submit" type="submit">보내기</button>
           </form>
         </div>
       </div>
@@ -882,9 +873,9 @@
         메일이 성공적으로 <br />
         발송되었습니다.
       </p>
-      <button class="close">닫기</button>
+      <button class="close_bt">닫기</button>
     </div>
-    <div class="content content7" id="contact">
+    <div class="content7" id="contact">
       <h1>copyright 2023 YUNJUNGJO. All rights reserved.</h1>
     </div>
 
@@ -892,6 +883,18 @@
     <div class="gotop">
       <i class="xi-arrow-up"></i>
     </div>
+
+    <!-- 헤더 -->
+    <script>
+      function header() {
+        if ($(this).scrollTop() > 200) {
+          $('.header').addClass('shrink')
+        } else {
+          $('.header').removeClass('shrink')
+        }
+      }
+      window.addEventListener('scroll', header)
+    </script>
     <!-- 슬라이드 -->
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
@@ -1004,17 +1007,14 @@
         $('.menu10').removeClass('on')
       })
     </script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- 메일 -->
     <script type="text/javascript">
       ;(function () {
         emailjs.init('9lEGkKPbu0kznDV1X')
       })()
     </script>
-    <!-- <script src="./js/app.js"></script> -->
+    <script src="./js/app.js"></script>
     <script src="./js/parallax.js"></script>
   </body>
 </html>
