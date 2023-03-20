@@ -848,6 +848,9 @@ button {
   }
 }
 @media (max-width: 1024px) {
+  .content {
+    height: 800px;
+  }
   .content2 {
     justify-content: center;
   }
@@ -896,5 +899,122 @@ button {
   }
   .content2 .inner_content p {
     font-size: 12px;
+  }
+  /* 여기부터 */
+  .parallax {
+    width: 100%;
+    height: 3200px;
+    position: relative;
+  }
+
+  .content4 {
+    top: 1200px;
+    background-color: #f2eee3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content5 {
+    top: 1200px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content3 {
+    top: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* 슬라이더 */
+  .post-slider {
+    width: 1050px;
+    margin: 0 auto;
+
+    position: relative;
+  }
+  .post-slider .silder-title {
+    text-align: center;
+    margin: 30px auto;
+    font-weight: 700;
+    /* padding-top: 50px; */
+    font-size: 26px;
+  }
+  .post-slider .next {
+    position: absolute;
+    top: 60%;
+    right: 0;
+    font-size: 2em;
+    color: gray;
+    cursor: pointer;
+  }
+  .post-slider .prev {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    font-size: 2em;
+    color: gray;
+    cursor: pointer;
+  }
+  .post-slider .post-wrapper {
+    width: 84%;
+    height: 400px;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 10px 0px;
+  }
+  .post-slider .post-wrapper .post {
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .post-slider .post-wrapper .post .img {
+    width: 250px;
+    margin: 0 auto;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+  }
+
+  .post-slider .post-wrapper .post h1 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    padding-bottom: 10px;
+  }
+  .post-slider .post-wrapper .post .btns {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .post-slider .post-wrapper .post button {
+    width: 100px;
+    margin: 0 auto;
+    height: 40px;
+    font-size: 14px;
+    border: none;
+    background-color: #7484ae;
+    color: #fff;
+  }
+  .post-slider
+    .post-wrapper
+    .post
+    .post-slider
+    .post-wrapper
+    .post
+    .slider-image {
+    width: 100%;
+    height: 300px;
   }
 }
